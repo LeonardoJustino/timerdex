@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"> <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Cronômetro</title>
+</head>
+
+<body>
+    <main id="cronometro">
+    
+        <div id="content">
+            <div id="display" > 
+                <p id="hours">0h
+                    
+                </p>
+                <p id="minutes">0m
+                </p>
+                <p id="secondsContent">0s
+                </p>
+            </div>
+                <div id="buttons">
+        <button onclick="start()">Iniciar</button>
+        <button onclick="pause()">Pausar</button>
+        <button onclick="reset()">Reiniciar</button>
+                </div>
+        </div>
+   
+    <footer>
+        <div id="selectColor">
+             <p id="textSelect">Select your Color</p>
+            <ul> 
+               
+                <li class="red"  onclick="changeRed()"></li>
+                <li class="blue" onclick="changeBlue()"></li>
+                <li><input id="chooseColor" onclick="chooseColor()" type="color" value="#FFFFFF"></li>
+            </ul>
+        </div>
+        <p id="darkMode" onclick="changeMode()">Dark Mode <i class="bi bi-brightness-alt-high"></i>
+        <p id="lightMode" onclick="changeMode()">
+             <i class="bi bi-moon"></i>Light Mode</p>
+        
+    </footer>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

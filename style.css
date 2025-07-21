@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+  
+    height: 100vh;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+#cronometro{
+    width: 340px;
+    height: 200px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 0.625rem;
+    box-shadow: 2px 0.6rem 2rem black ;
+    margin: auto;
+    
+}
+
+#content{
+  background-color: #2A2634;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+#buttons{
+    width: 250px;
+    display: flex;
+    margin: auto;
+    padding: 0.4rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+#display{
+    display: flex;
+    height: 6rem;
+   
+    align-items: center; 
+    width: 250px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+
+#display > p{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   color: white;
+   height: 50px;
+   width: 60px;
+   align-items: center;
+   padding: 0.24rem;
+   border-radius: 0.625rem;
+   box-shadow: 0.5px 0.1rem 1rem black;
+   
+}
+button  {
+    all: unset;
+    padding: 0.2rem;
+    box-shadow: 0.5px 0.1rem 1rem black;
+    border-radius: 0.4rem;
+    height: 2rem;
+    color: white;
+    font-weight: 400;
+    background-color: #2A2634;
+    width: 65px;
+    text-align: center;
+
+}
+button:hover{
+        background-color: #1a1720;
+
+}
+.minutes{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   height: 50px;
+   width: 60px;
+   align-items: center;
+   padding: 0.24rem;
+   border-radius: 0.625rem;
+   box-shadow: 0.5px 0.1rem 1rem black;
+}
+
+#changeButton{
+    display: flex;
+    margin: 90%;
+    height: 90%;
+}
+
+footer{
+    border: 1px solid black;
+    background-color: #1a1720;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: auto;
+    width: 150px;
+    color: white;
+    margin: 17% 55%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: -0.3rem 0.3rem 20px black;
+}
+footer p{
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    margin: auto;
+    color: black;
+    justify-content: center;
+    height: 30px;
+    border: 2px solid black;
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    font-weight: 400;
+    
+  
+}
+footer i{
+    width: 40px;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 100%;
+    height: 40px;
+    background-color: #2A2634;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+  
+   animation: transitionModeD  200ms ease   backwards reverse;
+}
+
+
+
+footer #lightMode{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+    border: 2px solid black;
+    background-color: #1c162e;
+    border-radius: 8px;
+    padding: 2px;
+    
+    font-weight: 400;
+    color: white;
+}
+footer #lightMode i{
+    width: 40px;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 100%;
+    height: 40px;
+    background-color: #2A2634;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+    animation: transitionModeL  200ms ease reverse backwards ;
+   
+}
+@keyframes transitionModeL {
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+       transform: translateX(100px);
+    }
+}
+@keyframes transitionModeD {
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+       transform: translateX(-100px);
+    }
+}
+
+#selectColor{
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 2px;
+}
+#selectColor p{
+    all: unset;
+    font-size: 13px;
+    color: white;
+
+}
+#selectColor ul {
+    display: flex;
+    width: auto;
+    list-style: none;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    padding: 2px;
+    gap: 5px;
+}
+#selectColor li, input{
+    width: 40px;
+    height: 40px;
+   border: 1px solid black; 
+}
+.red{
+    background-color: #CD5C5C;
+}
+.blue{
+    background-color: #191970;
+}
+.ciano{
+    	background-color: #008B8B;
+}
